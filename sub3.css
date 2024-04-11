@@ -1,0 +1,704 @@
+@import url('https://webfontworld.github.io/PyeongChang/PyeongChangPeace.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'NanumSquareNeo';
+    line-height: 1.5;
+    font-size: 16px;
+    min-width: 1320px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*헤더*/
+header {
+    width: 1320px;
+    margin: auto;
+    padding-top: 35px;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+/*헤더*/
+.shop-bn{
+    width: 100%;
+}
+
+
+
+/*움직이는 메뉴버튼*/
+
+input[id="menuicon"] {
+    display: none;
+}
+
+/*메뉴 아이콘 버튼 크기, 위치*/
+input[id="menuicon"]+label {
+    display: block;
+    width: 37px;
+    height: 30px;
+    position: relative;
+    z-index: 6;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/*메뉴 버튼 클릭했을 때 X버튼 색상*/
+input[id="menuicon"]:checked+label span {
+    background: #fff;
+}
+
+/*메뉴 세줄 버튼*/
+input[id="menuicon"]+label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background: #000;
+    transition: all 0.5s;
+}
+
+input[id="menuicon"]+label span:nth-child(1) {
+    top: 0;
+}
+
+input[id="menuicon"]+label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[id="menuicon"]+label span:nth-child(3) {
+    bottom: 0;
+}
+
+/*메뉴 버튼 클릭했을 때 세줄버튼에서 X버튼으로 바뀌는 모습*/
+input[id="menuicon"]:checked+label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="menuicon"]:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id="menuicon"]:checked+label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+
+/*메뉴 창*/
+.sidebar {
+    width: 100%;
+    height: 100%;
+    background: #000000cf;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 5;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.sidebar ul {
+    width: 420px;
+    margin: 220px auto;
+}
+
+.sidebar ul li {
+    padding-bottom: 30px;
+
+}
+
+.sidebar ul li:hover a {
+    color: #f6b671;
+}
+
+.sidebar li a {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+.logo3 {
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.sidebar li a span {
+    writing-mode: horizontal-tb;
+}
+
+input[id="menuicon"]:checked+label+div {
+    right: 0;
+}
+
+/*헤더*/
+header {
+    width: 1320px;
+    margin: auto;
+    padding-top: 35px;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+/*헤더*/
+
+/*움직이는 메뉴버튼*/
+
+input[id="menuicon"] {
+    display: none;
+}
+
+/*메뉴 아이콘 버튼 크기, 위치*/
+input[id="menuicon"]+label {
+    display: block;
+    width: 37px;
+    height: 30px;
+    position: relative;
+    z-index: 6;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/*메뉴 버튼 클릭했을 때 X버튼 색상*/
+input[id="menuicon"]:checked+label span {
+    background: #fff;
+}
+
+/*메뉴 세줄 버튼*/
+input[id="menuicon"]+label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background: #000;
+    transition: all 0.5s;
+}
+
+input[id="menuicon"]+label span:nth-child(1) {
+    top: 0;
+}
+
+input[id="menuicon"]+label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[id="menuicon"]+label span:nth-child(3) {
+    bottom: 0;
+}
+
+/*메뉴 버튼 클릭했을 때 세줄버튼에서 X버튼으로 바뀌는 모습*/
+input[id="menuicon"]:checked+label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="menuicon"]:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id="menuicon"]:checked+label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+
+/*메뉴 창*/
+.sidebar {
+    width: 100%;
+    height: 100%;
+    background: #000000cf;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 5;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.sidebar ul {
+    width: 420px;
+    margin: 220px auto;
+}
+
+.sidebar ul li {
+    padding-bottom: 30px;
+
+}
+
+.sidebar ul li:hover a {
+    color: #f6b671;
+}
+
+.sidebar li a {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+.logo3 {
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.sidebar li a span {
+    writing-mode: horizontal-tb;
+}
+
+input[id="menuicon"]:checked+label+div {
+    right: 0;
+}
+
+/*헤더*/
+header {
+    width: 1320px;
+    margin: auto;
+    padding-top: 35px;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+/*헤더*/
+
+/*움직이는 메뉴버튼*/
+
+input[id="menuicon"] {
+    display: none;
+}
+
+/*메뉴 아이콘 버튼 크기, 위치*/
+input[id="menuicon"]+label {
+    display: block;
+    width: 37px;
+    height: 30px;
+    position: relative;
+    z-index: 6;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/*메뉴 버튼 클릭했을 때 X버튼 색상*/
+input[id="menuicon"]:checked+label span {
+    background: #fff;
+}
+
+/*메뉴 세줄 버튼*/
+input[id="menuicon"]+label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background: #000;
+    transition: all 0.5s;
+}
+
+input[id="menuicon"]+label span:nth-child(1) {
+    top: 0;
+}
+
+input[id="menuicon"]+label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[id="menuicon"]+label span:nth-child(3) {
+    bottom: 0;
+}
+
+/*메뉴 버튼 클릭했을 때 세줄버튼에서 X버튼으로 바뀌는 모습*/
+input[id="menuicon"]:checked+label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="menuicon"]:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id="menuicon"]:checked+label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+
+/*메뉴 창*/
+.sidebar {
+    width: 100%;
+    height: 100%;
+    background: #000000cf;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 5;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.sidebar ul {
+    width: 420px;
+    margin: 220px auto;
+}
+
+.sidebar ul li {
+    padding-bottom: 30px;
+
+}
+
+.sidebar ul li:hover a {
+    color: #f6b671;
+}
+
+.sidebar li a {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+.logo3 {
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.sidebar li a span {
+    writing-mode: horizontal-tb;
+}
+
+input[id="menuicon"]:checked+label+div {
+    right: 0;
+}
+
+.magazine {
+    text-align: center;
+    width: 1320px;
+    margin: auto;
+    display: block;
+}
+.magazine img{
+    width: 100%;
+}
+h1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.goods1 div {
+    text-align: center;
+    color: #fff;
+    border-radius: 0px 0px 15px 15px;
+    background-color: rgba(37, 37, 37, 0.5);
+
+}
+
+
+
+.button1 {
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 10px 60px 10px 60px;
+    background-color: #fff;
+    box-shadow: 0px 6px 0px #000;
+    transform: translateY(6px);
+}
+
+
+.button1:hover {
+    box-shadow: none;
+    transition: all 0.5s;
+}
+
+
+.doods-box {
+    display: block;
+    width: 1320px;
+    margin: auto;
+}
+
+.goods1 {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+
+}
+.goods1 img{
+    display: block;
+}
+.goods1 li{
+    overflow: hidden;
+    position: relative;
+    border-radius:43px;
+}
+.goods1 p{
+    margin-top: 20px;
+}
+.goods1 div{
+    transition: all 1s;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom:-35px;
+}
+.goods1 li:hover div{
+    bottom: 0px;
+}
+
+/*할인 쿠폰 광고 배너*/
+.sele {
+    margin: 50px 0 50px 0;
+    position: relative;
+}
+
+.sele a {
+    position: absolute;
+    bottom: 50px;
+    left: 75px;
+
+}
+
+.button2 {
+    box-shadow: 0px 6px 0px #000;
+    border: 1px solid #000;
+    border-radius: 15px;
+    font-size: 23px;
+    font-weight: 900;
+    padding: auto;
+    font-family: 'PyeongChangPeace';
+    color: #000;
+    background-color: #fff;
+    padding: 12px 16px 12px 16px;
+    transform: translateY(6px);
+}
+
+.button2:hover {
+    box-shadow: none;
+    transition: all 0.5s;
+}
+
+/*할인 쿠폰 광고 배너*/
+
+/*뉴스레터 및 푸터 시작점*/
+/*뉴스레터*/
+.left {
+    width: 1320px;
+    height: 350px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    background-color: #EAE4F6;
+}
+
+.left>div {
+    padding-bottom: 50px;
+    padding-top: 45px;
+    padding-left: 70px;
+}
+
+.text_footer1 {
+    width: 150px;
+    color: #000;
+}
+
+.text_footer1 p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+}
+
+.text_footer1>a {
+    font-size: 54px;
+    margin-bottom: 70px;
+    display: block;
+    border-bottom: 3px solid #000;
+}
+
+.text_footer2 {
+    width: 645.26px;
+    position: relative;
+}
+
+.text_footer2 p {
+    color: #000;
+    font-weight: bold;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.text_footer2 .email {
+    width: 645px;
+    height: 55px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 4px solid #000;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+    padding-right: 60px;
+    box-sizing: border-box;
+}
+
+.text_footer2 .email:focus {
+    outline: none;
+}
+
+.text_footer2 .email::placeholder {
+    color: #8E8E8E;
+}
+
+.text_footer2 img {
+    position: absolute;
+    bottom: 8px;
+    right: 7px;
+
+}
+
+/*뉴스레터*/
+
+
+/*푸터*/
+footer {
+    max-width: 100%;
+    border-top: 3px solid #000;
+}
+
+.footer_contants {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.top {
+    position: absolute;
+    top: 42px;
+    right: 19px;
+}
+
+.text_footer5 {
+    margin-top: 42px;
+}
+
+.text_footer5 p {
+    color: #848484;
+    font-size: 18px;
+    line-height: 38px;
+}
+
+.text_footer5 .aa {
+    margin-left: 10px;
+
+}
+
+.text_footer6 {
+    margin-top: 211px;
+    margin-right: 19px;
+}
+
+.icon_footer {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.icon_footer a {
+    padding: 0px 10px 0px 10px;
+}
+
+.icon_footer img {
+    display: block;
+}
+
+.icon_footer .youtube {
+    padding-top: 5px;
+}
+
+.text_footer3 {
+    margin-bottom: 15px;
+}
+
+.text_footer3 p {
+    line-height: 36px;
+}
+
+.text_footer3 a {
+    color: #848484;
+    text-align: end;
+    font-size: 23px;
+    font-weight: bold;
+    display: block;
+}
+
+.text_footer4 {
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.text_footer4 p {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+/*푸터*/

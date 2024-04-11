@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'NanumSquareNeo';
+    font-size: 16px;
+    /*
+    cursor: url(./images/INDEX/images/index/cursor00.png), auto;*/
+    color: #000;
+    min-width: 1320px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+header {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    margin-left: -660px;
+    z-index: 99;
+}
+
+.menu {
+    width: 1320px;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*움직이는 메뉴버튼*/
+
+input[id="menuicon"] {
+    display: none;
+}
+
+/*메뉴 아이콘 버튼 크기, 위치*/
+input[id="menuicon"]+label {
+    display: block;
+    width: 37px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/*메뉴 버튼 클릭했을 때 X버튼 색상*/
+input[id="menuicon"]:checked+label span {
+    background: #000;
+}
+
+/*메뉴 세줄 버튼*/
+input[id="menuicon"]+label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background: #000;
+    transition: all 0.5s;
+}
+
+input[id="menuicon"]+label span:nth-child(1) {
+    top: 0;
+}
+
+input[id="menuicon"]+label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[id="menuicon"]+label span:nth-child(3) {
+    bottom: 0;
+}
+
+/*메뉴 버튼 클릭했을 때 세줄버튼에서 X버튼으로 바뀌는 모습*/
+input[id="menuicon"]:checked+label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+input[id="menuicon"]:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id="menuicon"]:checked+label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+
+/*메뉴 창*/
+.sidebar {
+    width: 100%;
+    height: 100%;
+    background: #000000cf;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.sidebar ul {
+    width: 420px;
+    margin: 220px auto;
+}
+
+.sidebar ul li {
+    padding-bottom: 30px;
+
+}
+
+.sidebar ul li:hover a {
+    color: #f6b671;
+}
+
+.sidebar li a {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+.logo3 {
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.sidebar li a span {
+    writing-mode: horizontal-tb;
+}
+
+input[id="menuicon"]:checked+label+div {
+    right: 0;
+}
+
+.textbox00 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/*배너*/
+.banner {
+    height: 937px;
+    background: url(./images/history/bn.png) no-repeat center top;
+    background-size: cover;
+    display: block;
+}
+
+
+
+.banner-text {
+    width: 1320px;
+    margin: auto;
+    padding: 270px 0 0 0;
+    text-align: center;
+    font-family: 'GimpoBatang';
+}
+
+.HISTORY {
+    font-size: 33px;
+    padding-bottom: 26px;
+}
+
+.text1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.text2 {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.text3 {
+    font-size: 25px;
+    padding-bottom: 41px;
+}
+
+
+
+/*트렌치 코트 역사*/
+.story1 {
+    background: url(./images/history/trenchcoat.png) no-repeat center top fixed;
+    background-size: cover;
+}
+
+.trenchcoat-text {
+    padding: 20px 20px 40px;
+    color: #fff;
+    width: 644px;
+    background-color: #0000005b;   
+}
+.text_box1{
+    padding: 100px 0 ;
+    width: 1320px;
+    margin: auto;
+
+}
+h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: "Nanum Myeongjo", serif;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text0 {
+    padding-bottom: 20px;
+}
+
+.end {
+    padding-top: 20px;
+}
+
+.trenchcoat-text p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/*셔츠 스토리*/
+.story2 {
+   background: url(./images/history/whiteshirt.png) no-repeat center top fixed;
+ background-size: cover;
+}
+
+.whiteshirt-text {
+    margin-left: auto;
+    width: 644px;
+    background-color: #0000005b;
+    padding-left: 20px;
+    line-height: 26px;
+    padding-bottom: 40px;
+
+}
+.text_box2{
+    width: 1320px;
+    margin: auto;
+    padding: 100px 0;
+
+}
+.whiteshirt-text p {
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+/*컨텐츠*/
+.wrab{
+    background-color: #000;
+    padding-top: 100px;
+
+}
+
+.contents-box {
+    width: 1320px;
+    margin: auto;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-stack;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 1.7;
+}
+
+
+.contents1 {
+    margin-bottom: 110px;
+   
+}
+.contents1 img{
+    transition: all 0.5s;
+    display: block;
+}
+.contents1 div{
+    overflow: hidden;
+
+}
+.contents1 img:hover{
+    transform: scale(1.2);
+ 
+}
+
+
+.ending-text{
+    padding-top: 450px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.endingimg{
+    color: #fff;
+    height: 2880px;
+    background: url(./images/history/ending.png) no-repeat center center;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*뉴스레터*/
+.left {
+    width: 1320px;
+    height: 350px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: #EAE4F6;
+}
+
+.left>div {
+    padding-bottom: 50px;
+    padding-top: 45px;
+    padding-left: 70px;
+}
+
+.text_footer1 {
+    width: 150px;
+    color: #000;
+}
+
+.text_footer1 p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+}
+
+.text_footer1>a {
+    font-size: 54px;
+    margin-bottom: 70px;
+    display: block;
+    border-bottom: 3px solid #000;
+}
+
+.text_footer2 {
+    width: 645.26px;
+    position: relative;
+}
+
+.text_footer2 p {
+    color: #000;
+    font-weight: bold;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.text_footer2 .email {
+    width: 645px;
+    height: 55px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 4px solid #000;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+    padding-right: 60px;
+    box-sizing: border-box;
+}
+
+.text_footer2 .email:focus {
+    outline: none;
+}
+
+.text_footer2 .email::placeholder {
+    color: #8E8E8E;
+}
+
+.text_footer2 img {
+    position: absolute;
+    bottom: 8px;
+    right: 7px;
+
+}
+
+/*뉴스레터*/
+
+
+/*푸터*/
+footer {
+    max-width: 100%;
+    border-top: 3px solid #000;
+}
+
+.footer_contants {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.top {
+    position: absolute;
+    top: 42px;
+    right: 19px;
+}
+
+.text_footer5 {
+    margin-top: 42px;
+}
+
+.text_footer5 p {
+    color: #848484;
+    font-size: 18px;
+    line-height: 38px;
+}
+
+.text_footer5 .aa {
+    margin-left: 10px;
+
+}
+
+.text_footer6 {
+    margin-top: 211px;
+    margin-right: 19px;
+}
+
+.icon_footer {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.icon_footer a {
+    padding: 0px 10px 0px 10px;
+}
+
+.icon_footer img {
+    display: block;
+}
+
+.icon_footer .youtube {
+    padding-top: 5px;
+}
+
+.text_footer3 {
+    margin-bottom: 15px;
+}
+
+.text_footer3 p {
+    line-height: 36px;
+}
+
+.text_footer3 a {
+    color: #848484;
+    text-align: end;
+    font-size: 23px;
+    font-weight: bold;
+    display: block;
+}
+
+.text_footer4 {
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.text_footer4 p {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+/*푸터*/
