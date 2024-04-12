@@ -178,7 +178,7 @@ input[id="menuicon"]:checked+label+div {
 .banner-text {
     width: 1320px;
     margin: auto;
-    padding: 270px 0 0 0;
+    padding: 300px 0 0 550px;
     text-align: center;
     font-family: 'GimpoBatang';
 }
