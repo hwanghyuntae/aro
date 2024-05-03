@@ -1,9 +1,8 @@
+AOS.init({
+    duration: 2000 //aos 나타나는 속도
+});
 
 $(function () {
-    AOS.init({
-        duration: 2000 //aos 나타나는 속도
-    });
-
     var swiper = new Swiper('.slide ', {
         slidesPerView: 2,//보여지는 갤러리 수
         centeredSlides: true,//센터모드
@@ -24,4 +23,6 @@ $(function () {
         },
         spaceBetween: 160,//갤러리 사이 간격
     });
+
+    
 });
